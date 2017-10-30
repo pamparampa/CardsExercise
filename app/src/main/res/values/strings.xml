@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CardsExcercise2</string>
+    <string name="number_of_decks">"liczba talii: %1$d"</string>
+    <string name="remains_number">"pozostało: %1$d kart" </string>
+    <string name="shuffle">Tasuj</string>
+    <string name="adjust_card">Dobierz\nkartę</string>
+    <string name="base_url">https://deckofcardsapi.com/api/deck/</string>
+    <string name="suit">kolor: %1$s</string>
+    <string name="twins">bliźniaki: %1$s</string>
+    <string name="figures">Figury</string>
+    <string name="stairs">schody: %1$s</string>
+    <string name="matches">UŁOŻENIA:</string>
+    <string name="deck_count">"Liczba talii</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Anuluj</string>
+    <string name="which_shuffle">whichShuffle</string>
+    <string name="nothing">Brak</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="jack">Walet</string>
+    <string name="queen">Dama</string>
+    <string name="king">Król</string>
+    <string name="ace">As</string>
+    <string name="spade">Pik</string>
+    <string name="heart">Kier</string>
+    <string name="diamond">Karo</string>
+    <string name="club">Trefl</string>
+    <string name="no_connection">Brak połączenia</string>
+    <string name="with_internet">z Internetem</string>
+</resources>

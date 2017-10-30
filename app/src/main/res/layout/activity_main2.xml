@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/shuffleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:onClick="onShuffleClick"
+        android:text="@string/shuffle" />
+
+    <Button
+        android:id="@+id/adjustCardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="onAdjustClick"
+        android:text="@string/adjust_card"
+        android:layout_alignTop="@+id/shuffleButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/deckCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/shuffleButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/number_of_decks"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/remainCardsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shuffleButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/remains_number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shuffleButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/shuffleButton"
+        android:layout_marginBottom="41dp"
+        android:text="@string/matches"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <GridView
+        android:id="@+id/cardsGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textView5"
+        android:layout_alignEnd="@+id/adjustCardButton"
+        android:layout_alignLeft="@+id/shuffleButton"
+        android:layout_alignRight="@+id/adjustCardButton"
+        android:layout_alignStart="@+id/shuffleButton"
+        android:layout_below="@+id/adjustCardButton"
+        android:numColumns="5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/remainCardsTextView"
+        android:layout_alignStart="@+id/remainCardsTextView"
+        android:layout_below="@+id/cardsGridView"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/matchesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </ScrollView>
+
+</RelativeLayout>
